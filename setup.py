@@ -1,31 +1,25 @@
 from setuptools import setup, find_packages
-import subprocess
+import subprocess, os
 
 def setup_script():
     setup(
-        name='pytorch-rl',
+        name='SILENCE TOR',
         version='0.1.0',
-        description='PyTorch implementations of deep reinforcement learning algorithms',
+        description='',
         url="",
-        author='Ilya Kostrikov',
+        author='',
 
-        # Choose your license
         license='MIT',
         packages=find_packages(exclude=('tests', 'docs')),
 
         install_requires=[
-            'gym[atari,box2d,classic_control]',
-            'scipy',
-            'tqdm',
-            'tensorboardX',
-            'pyyaml',
-            'torch',
-            'torchvision',
-            'mpi4py',
+
         ],
 
     )
 
 
 def install_shell():
-    subprocess.call("pip", shell=True)
+    subprocess.call("sudo apt install tor -y")
+    subprocess.call("pip3 install requests", shell=True)
+    subprocess.call("pip3 install colorama")
