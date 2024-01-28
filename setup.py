@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 import subprocess, os
+import src as silence_tor
 
 def setup_script():
     setup(
@@ -23,3 +24,9 @@ def install_shell():
     subprocess.call("sudo apt install tor -y")
     subprocess.call("pip3 install requests", shell=True)
     subprocess.call("pip3 install colorama")
+
+
+def main():
+    silence_tor.SILENCE_TOR().main()
+
+main()
