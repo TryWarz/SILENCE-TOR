@@ -6,13 +6,20 @@ def setup_script():
     setup(
         name='SILENCE TOR',
         version='0.1.0',
-        description='',
-        url="",
-        author='',
+        description='A simple python script to run TOR in the background.',
+        author='TryWarz',
 
-        license='MIT',
-        packages=find_packages(exclude=('tests', 'docs')),
+        license='CC0 1.0 Universal',
+        classifiers=[
+            'Development Status :: 3 - Alpha',
 
+            'Intended Audience :: Developers',
+            'Topic :: Software Development :: Build Tools',
+
+            'License :: OSI Approved :: MIT License',
+
+            'Programming Language :: Python :: 3.9',
+        ],
         install_requires=[
 
         ],
