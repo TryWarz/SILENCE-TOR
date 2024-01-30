@@ -3,6 +3,19 @@ import src.Interface as interface
 import os
 
 class SILENCE_TOR:
+    """
+    SILENCE_TOR class represents the main functionality of the SILENCE TOR application.
+    It provides methods to initialize the application, start and stop the TOR service, and display the current IP address.
+
+    Attributes:
+        host (str): The current IP address.
+        reload (function): Function to reload the TOR service.
+        start (function): Function to start the TOR service.
+
+    Methods:
+        main(): The main method of the application that runs the TOR service and handles user input.
+    """
+
     def __init__(self) -> None:
         self.host = core.request().host
         self.reload = core.tor_reload()

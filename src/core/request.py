@@ -1,6 +1,5 @@
 import requests
 
-# Path: src/core/response.py
 
 class request:
     def __init__(self) -> None:
