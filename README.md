@@ -8,17 +8,17 @@ This code snippet demonstrates how to configure SILENCE TOR to pass through a To
 3. Set the proxy settings for Firefox to use the Tor proxy.
 4. Test the connection to ensure SILENCE TOR is successfully passing through the Tor proxy.
 
-# Example code:
+## Example code:
 
 ```bash
 pip3 install requests
 pip3 install colorama
 ```
 
-# Set the FireFox Tor proxy settings
+## Set the FireFox Tor proxy settings
 ![EXEMPLE : ](img/1.png)
 
-# Test the connection
+## Test the connection
 ![EXEMPLE : ](img/2.png)
 
 Note: Make sure to have the Tor proxy software installed and running on your system before executing this code.
